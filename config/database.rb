@@ -9,8 +9,7 @@ configure do
   }
 
 else
-  db = URI.parse(ENV['DATABASE_URL'] || 'postgres://gxtmmeubbfkabo:07f08ea6308b251ee8c16d7c6e0d38390f3a07475a524f745aa369e67411383f@ec2-54-235-196-250.compute-1.amazonaws.com:5432/d1ukn0f0crh387
-')
+  db = URI.parse(ENV['DATABASE_URL'] || 'postgres://gxtmmeubbfkabo:07f08ea6308b251ee8c16d7c6e0d38390f3a07475a524f745aa369e67411383f@ec2-54-235-196-250.compute-1.amazonaws.com:5432/d1ukn0f0crh387')
   set :database, {
   adapter: "postgresql",
   host: db.host,
